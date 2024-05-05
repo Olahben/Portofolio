@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         "component-background-color": "#cfd1d4",
         "btn-color": "#111827",
+        "background-color": "#f9fafb"
       },
       fontFamily: {
         "nunito": ["Nunito", "sans-serif"]
