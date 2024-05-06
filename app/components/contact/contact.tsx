@@ -4,7 +4,7 @@ import Form from './form'
 
 const Contact = () => {
   return (
-    <div className="mt-20 justify-start flex flex-wrap flex-col max-w-3xl">
+    <div className="mt-20 justify-start flex flex-wrap flex-col sm:max-w-[608] sm:w-[608px]">
         <ContactMe />
         <Form />
     </div>
