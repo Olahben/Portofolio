@@ -1,11 +1,14 @@
 "use client"
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
     const Form = () => {
         const [formData, setFormData] = useState({
             email: '',
             message: ''
         })
+
+        const [toastMessage, setToastMessage] = useState("");
+        const [isToastVisible, setIsToastVisible] = useState(false);
 
         const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
             e.preventDefault();
@@ -18,15 +21,30 @@ import React, {useState} from 'react'
             })
                 .then((response) => response.json())
                 .then((data) => {
-                    console.log('Success:', data);
+                    setToastMessage("E-Mail sucessfully sent!");
+                    setIsToastVisible(true);
                 })
                 .catch((error) => {
                     console.error('Error:', error);
             })
         }
 
+        useEffect(() => {
+            if (toastMessage) {
+              const timer = setTimeout(() => {
+                setToastMessage('');
+                setIsToastVisible(false);
+              }, 4500);
+        
+              return () => {
+                clearTimeout(timer);
+              };
+            }
+          }, [toastMessage]);
+
         return (
             <div className="mt-10">
+                <div className={`toast alert alert-success toast-bottom toast-end bg-component-background-color rounded-none ${isToastVisible ? "opacity-100 transition ease-in duration-300" : "opacity-0 transition ease-out duration-300"}`}>{toastMessage}</div>
                 <form onSubmit={handleSubmit} className='justify-start flex gap-y-2 flex-col'>
                     <div>
                         <input
