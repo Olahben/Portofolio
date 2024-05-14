@@ -1,8 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import dotenv from 'dotenv';
 import nodemailer from "nodemailer";
-import { NextRequest, NextResponse } from 'next/server';
-import { json } from 'stream/consumers';
 
 export async function POST(req: Request, res: NextApiResponse) {
     //res.status(200).send("Email sent successfully");
@@ -34,10 +32,10 @@ if (req.method === 'POST') {
     try {
    const info = await transporter.sendMail(emailMessage);
    console.log(info);
-   return NextResponse.json({status: 201})
+   return res.status(201).json({info});
     } catch (err) {
-        console.error("Error sending mail:", err)
-        return NextResponse.json({error: err}, {status: 500})
+        console.error("Error sending mail:", err);
+        return res.status(500).json({err});
     }
 
  } else {
