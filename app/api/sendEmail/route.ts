@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import dotenv from 'dotenv';
 import nodemailer from "nodemailer";
 
-export async function POST(req: Request, res: NextApiResponse) {
+export async function POST(req: Request, res: Response) {
     //res.status(200).send("Email sent successfully");
 if (req.method === 'POST') {
     const emailName = process.env.NEXT_PUBLIC_EMAIL_NAME;
@@ -32,13 +32,13 @@ if (req.method === 'POST') {
     try {
    const info = await transporter.sendMail(emailMessage);
    console.log(info);
-   return res.status(201).json({info});
+   return Response.json({message: info}, {status: 201});
     } catch (err) {
         console.error("Error sending mail:", err);
-        return res.status(500).json({err});
+        return Response.json({message: err}, {status: 500});
     }
 
  } else {
-    res.status(405).json({ message: 'Method Not Allowed' });
+    return Response.json({message: "Method not allowed"}, {status: 405});
  }
 }
