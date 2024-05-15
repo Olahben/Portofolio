@@ -92,15 +92,11 @@ const BgParticles = () => {
                 },
             },
             interactivity: {
-                detectsOn: "canvas",
+                detectsOn: "window",
                 events: {
                     onHover: {
                         enable: true,
                         mode: "grab"
-                    },
-                    onClick: {
-                        enable: true,
-                        mode: "push"
                     },
                     resize: true
                 },
