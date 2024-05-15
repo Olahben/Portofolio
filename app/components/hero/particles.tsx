@@ -142,7 +142,7 @@ const BgParticles = () => {
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}
                 options={options}
-                className="w-[100%] h-[100%]"
+                className="w-[100%] h-[100%] absolute top-0"
             />
         );
     }
