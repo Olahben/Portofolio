@@ -1,8 +1,6 @@
 "use client"
-import React from 'react'
-import { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from 'react'
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { tsParticles } from '@tsparticles/engine';
 import {
     type Container,
     type ISourceOptions,
@@ -12,7 +10,7 @@ import {
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 
-const hero = () => {
+const BgParticles = () => {
     const [init, setInit] = useState(false);
     useEffect(() => {
         initParticlesEngine(async (engine) => {
@@ -90,4 +88,4 @@ const hero = () => {
     return <></>;
 }
 
-export default hero
+export default BgParticles
