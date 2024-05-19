@@ -4,7 +4,7 @@ const Me = () => {
     return (
         <div className="flex flex-col w-full h-full absolute items-center mt-32 max-w-[550px]">
             <div className="avatar">
-                <div className="w-28 rounded-full ring ring-primary ring-offset-base-300">
+                <div className="w-28 rounded-full ring ring-neutral-50 ring-offset-base-100 ring-offset-1">
                     <img src="/IMG_1732.jpg"></img>
                 </div>
             </div>
