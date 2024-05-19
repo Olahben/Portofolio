@@ -16,7 +16,9 @@ const config: Config = {
       colors: {
         "component-background-color": "#cfd1d4",
         "btn-color": "#111827",
-        "background-color": "#f9fafb"
+        "background-color": "#f9fafb",
+        "toast-success-color": "#0dcb5c",
+        "card-bg-color": "#f3f4f6",
       },
       fontFamily: {
         "nunito": ["Nunito", "sans-serif"]
