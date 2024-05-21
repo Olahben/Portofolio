@@ -3,12 +3,12 @@ import React from 'react'
 import Link from 'next/link'
 
 type TextLink = {
-    text: string;
+  text: string;
 }
 
-const NavBarLink: React.FC<TextLink> = ({   text    }) => {
+const NavBarLink: React.FC<TextLink> = ({ text }) => {
   return (
-    <Link className="hover:text-black" href={text}>{text}</Link>
+    <Link className="hover:text-black text-[rgb(107,114,128)] text-[16px]" href={`#${text}`}>{text}</Link>
   )
 }
 
