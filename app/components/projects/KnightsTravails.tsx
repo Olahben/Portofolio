@@ -12,7 +12,7 @@ const KnightsTravails = () => {
                 </div>
                 <p className="text-gray-700 leading-relaxed mt-[-13px] font-[480]">
                     A project that was made to help a knight navigate its way throughout a chess board starting from x position navigating to y position.
-                    This project utilizes multiple types of recursion, and other classical methods commonly used in computer science which evaluates which position the knight should move to.
+                    The application utilizes common computer science algorithms and recursion to solve the problem.
                     This project runs on Node.JS and was written with JS, a GUI is not made yet.
                 </p>
                 <div className="flex gap-2">
