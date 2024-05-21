@@ -21,7 +21,7 @@ const BgParticles = () => {
     }, []);
 
     const particlesLoaded = async (container?: Container): Promise<void> => {
-        console.log(container);
+        console.log("particles loaded")
     };
 
     const options: ISourceOptions = useMemo(
