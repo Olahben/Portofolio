@@ -38,3 +38,4 @@ next-env.d.ts
 # API keys
 keys.env
 process.env
+.env
