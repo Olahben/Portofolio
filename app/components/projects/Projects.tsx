@@ -1,6 +1,7 @@
 import React from 'react'
 import Lagerhotell from './Lagerhotell'
 import CryptoBot from './CryptoBot'
+import KnightsTravails from './KnightsTravails'
 
 const Projects = () => {
     return (
@@ -8,6 +9,7 @@ const Projects = () => {
             <p className="text-3xl font-medium mb-4">My Projects</p>
             <Lagerhotell />
             <CryptoBot />
+            <KnightsTravails />
         </div>
     )
 }
