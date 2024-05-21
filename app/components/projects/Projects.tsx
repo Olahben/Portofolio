@@ -2,6 +2,7 @@ import React from 'react'
 import Lagerhotell from './Lagerhotell'
 import CryptoBot from './CryptoBot'
 import KnightsTravails from './KnightsTravails'
+import Portfolio from './Portfolio'
 
 const Projects = () => {
     return (
@@ -10,6 +11,7 @@ const Projects = () => {
             <Lagerhotell />
             <CryptoBot />
             <KnightsTravails />
+            <Portfolio />
         </div>
     )
 }
