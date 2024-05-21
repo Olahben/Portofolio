@@ -26,7 +26,7 @@ const Lagerhotell = () => {
                 </div>
             </div>
             <div className="lg:w-[50%] flex items-end">
-                <img className="absolute top-20 rounded-md hidden lg:block shadow-2xl" width="510" height="380" alt="A project I worked on, warehouse hotel" src="/lagerhotell.png"></img>
+                <img className="absolute top-20 rounded-md hidden lg:block shadow-2xl group-hover:-rotate-2 group-hover:-translate-x-3 group-hover:translate-y-2 transition-transform duration-150" width="510" height="380" alt="A project I worked on, warehouse hotel" src="/lagerhotell.png"></img>
             </div>
         </div >
     )
