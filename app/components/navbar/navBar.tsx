@@ -10,6 +10,7 @@ const navBar = () => {
       <NavBarLink text="Home" />
       <NavBarLink text="Projects" />
       <NavBarLink text="Skills" />
+      <NavBarLink text="Experience" />
       <NavBarLink text="Contact" />
     </div>
   )
