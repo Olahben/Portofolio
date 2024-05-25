@@ -98,7 +98,6 @@ const BgParticles = () => {
                         enable: true,
                         mode: "grab"
                     },
-                    resize: true
                 },
                 modes: {
                     grab: {
