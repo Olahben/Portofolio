@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center gap-14 pt-[40px] sm:pt-[68px]">
       <NavBar />
-      <Hero />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
+      <section className="w-full" id="Home"><Hero /></section>
+      <section id="Projects"><Projects /></section>
+      <section id="Skills"><Skills /></section>
+      <section id="Experience"><Experience /> </section>
+      <section id="Contact"><Contact /></section>
     </main>
   );
 }
