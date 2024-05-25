@@ -35,9 +35,9 @@ export default function NavBar() {
   return (
 
     <div className="navbar-center bg-component-background-color
-     flex w-full top-0 justify-between font-nunito text-md fixed p-[10%] sm:mt-5
-      sm:pt-2.5 sm:pb-2.5 sm:p-[2%] sm:tracking-normal sm:text-lg sm:rounded-full sm:max-w-[608px]
-      sm:font-[200] sm:pl-8 sm:pr-8 z-10">
+     flex w-full top-0 justify-between font-nunito text-md fixed sm:mt-5
+      sm:tracking-normal sm:text-lg sm:rounded-full sm:max-w-[608px]
+      sm:font-[200] sm:pl-8 sm:pr-8 z-10 pt-1.5 pb-1.5">
       <NavBarLink text="Home" currentSection={currentSection} />
       <NavBarLink text="Projects" currentSection={currentSection} />
       <NavBarLink text="Skills" currentSection={currentSection} />
