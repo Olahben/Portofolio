@@ -2,7 +2,7 @@ import React from 'react'
 
 const Experience = () => {
     return (
-        <div className="max-w-[58rem] p-5 text-center" id="Experience">
+        <div className="max-w-[58rem] p-5 text-center">
             <p className="text-3xl font-medium mb-3">My Experience</p>
             <ul className="timeline timeline-vertical flex justify-start items-start gap-8">
                 <li className="flex justify-start items-start">
