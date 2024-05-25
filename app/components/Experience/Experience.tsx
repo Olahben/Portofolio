@@ -13,7 +13,7 @@ const Experience = () => {
                         <p className="text-lg font-semibold">Internship</p>
                         <p className="mt-1"><a className="underline text-base font-medium" href="https://www.getadigital.com/" target='_blank'>Geta AS</a></p>
                         <p className="mt-1">A sort of internship that I am currently attending as part of the school hours. I usally travel to the office every friday to work, and I often choose to work on the project on my free time.
-                            The project is as mentioned a system for multiple warehouse hotels as you can see in the Projects section. I have worked with tools like: Blazor, C#, .NET, Rest APIs and so on. This has been my first ever real experience of working at a office, and I can't complain!
+                            The project is as mentioned a system for multiple warehouse hotels as you can see in the Projects section. I have worked with tools like: Blazor, C#, .NET, Rest APIs and so on. This has been my first ever real experience of working at a office, and I can not complain!
                         </p>
                         <p className="text-sm font-light mt-1">November 2023 - Present</p>
                     </div>
