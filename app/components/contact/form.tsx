@@ -10,6 +10,7 @@ const Form = () => {
     const [toastMessage, setToastMessage] = useState("");
     const [isToastVisible, setIsToastVisible] = useState(false);
     const [emailPending, setEmailPending] = useState(false);
+    const [sendEmailError, setSendEmailError] = useState(false);
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -28,8 +29,11 @@ const Form = () => {
                 setEmailPending(false);
                 formData.email = "";
                 formData.message = "";
+                setSendEmailError(false);
             })
             .catch((error) => {
+                setToastMessage("An error occurred while trying to send the E-Mail!");
+                setSendEmailError(true);
                 console.error('Error:', error);
             })
     }
@@ -49,7 +53,7 @@ const Form = () => {
 
     return (
         <div className="mt-10">
-            <div className={`toast alert alert-success toast-bottom toast-end bg-component-background-color rounded-none ${isToastVisible ? "opacity-100 transition ease-in duration-300" : "opacity-0 transition ease-out duration-300"}`}>{toastMessage}</div>
+            <div className={`toast alert alert-success toast-bottom toast-end bg-component-background-color rounded-none ${isToastVisible ? "opacity-100 transition ease-in duration-300" : "opacity-0 transition ease-out duration-300"} ${sendEmailError ? "text-red-800" : ""}`}>{toastMessage}</div>
             <form onSubmit={handleSubmit} className='justify-start flex gap-y-2 flex-col'>
                 <div>
                     <input
