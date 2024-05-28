@@ -26,6 +26,8 @@ const Form = () => {
                 setToastMessage("E-Mail sucessfully sent!");
                 setIsToastVisible(true);
                 setEmailPending(false);
+                formData.email = "";
+                formData.message = "";
             })
             .catch((error) => {
                 console.error('Error:', error);
