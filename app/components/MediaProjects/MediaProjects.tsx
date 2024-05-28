@@ -19,10 +19,27 @@ const MediaProjects = () => {
         <div className="max-w-[1064px] text-center p-2">
             <p className="text-2xl font-normal mb-5">Media-oriented projects</p>
             <div className="flex flex-row flex-wrap max-w-[1064px] p-2 gap-x-20 gap-y-4 justify-center md:gap-x-3 md:gap-y-3">
-                <img alt="Shopping mall" src="/kjopeSenter1.jpeg" className="w-[40%] order-1 md:order-1 md:w-[33%]"></img>
-                <img alt="My friend" src="/yevhenii.jpg" className="w-[40%] order-2 md:order-3 md:w-[28%]"></img>
-                <img alt="Nature" src="/natur.jpg" style={isLargeScreen ? {} : { width: 'calc(80% + 5rem)' }} className="order-3 md:order-2 md:w-[65%]"></img>
-                <img alt="Move I produced" src="lidenskap.png" style={isLargeScreen ? {} : { width: 'calc(80% + 5rem)' }} className="order-4 md:order-4 md:w-[70%]"></img>
+                <div className="flex flex-row flex-wrap max-w-[1064px] p-2 gap-3">
+                    <div className="relative group w-[35%] order-1 sm:order-2 md:order-1">
+                        <img src="/kjopeSenter1.jpeg" className="w-full h-full"></img>
+                        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200"></div>
+                    </div>
+                    <div className="relative group w-[63%] order-2 sm:order-1 md:order-2">
+                        <img src="/natur.jpg" className="w-full h-full"></img>
+                        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200"></div>
+                    </div>
+                    <div className="relative group w-[29%] order-3 sm:order-3 md:order-3">
+                        <img src="/yevhenii.jpg" className="w-full h-full"></img>
+                        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200"></div>
+                    </div>
+                    <div className="relative group w-[69%] order-4 sm:order-4 md:order-4">
+                        <img src="lidenskap.png" className="w-full h-full"></img>
+                        <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200 text-white text-base p-2">
+                            <p>A short movie covering my friend Håkons interest about music. I used a lot of different cameras and equipment to get the right content. I used Adobe Premiere Pro to edit the material my desired result.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full h-full bg-black opacity-85 hidden group-hover:inline"></div>
             </div>
         </div>
     )
