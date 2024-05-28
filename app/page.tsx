@@ -5,6 +5,7 @@ import Skills from "./components/skills/Skills";
 import Hero from "./components/hero/hero";
 import Projects from "./components/projects/Projects";
 import Experience from "./components/Experience/Experience";
+import MediaProjects from "./components/MediaProjects/MediaProjects";
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <NavBar />
       <section className="w-full" id="Home"><Hero /></section>
       <section id="Projects"><Projects /></section>
-      <section id="Skills"><Skills /></section>
+      <section id="Media projects"><MediaProjects></MediaProjects></section>
+      <section id="Skills" className=""><Skills /></section>
       <section id="Experience"><Experience /> </section>
       <section id="Contact"><Contact /></section>
     </main>
