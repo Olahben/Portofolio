@@ -35,7 +35,7 @@ const MediaProjects = () => {
                     <div className="relative group w-[69%] order-4 sm:order-4 md:order-4">
                         <img src="lidenskap.png" className="w-full h-full"></img>
                         <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-200 text-white text-base p-2">
-                            <p>A short movie covering my friend Håkons interest about music. I used a lot of different cameras and equipment to get the right content. I used Adobe Premiere Pro to edit the material my desired result.</p>
+                            <p>A short movie covering my friend Håkons interest about music. I used a lot of different cameras and equipment to get the right content. I used Adobe Premiere Pro to edit the material and get my desired result.</p>
                         </div>
                     </div>
                 </div>
