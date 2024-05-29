@@ -3,7 +3,7 @@ import React from 'react'
 
 const CryptoBot = () => {
     return (
-        <div className="group relative container flex bg-card-bg-color w-full text-start rounded-lg border border-black/5 hover:bg-gray-200 transition overflow-hidden">
+        <div className="group relative container flex bg-card-bg-color w-full text-start rounded-lg border border-black/5 hover:bg-gray-200 transition overflow-hidden" data-aos="zoom-in" data-aos-duration="1000">
             <div className="container flex flex-col gap-3 p-4 w-full lg:w-[50%]">
                 <p className="text-2xl font-semibold">Crypto Bot</p>
                 <div className="flex items-center mt-[-12px] w-full">

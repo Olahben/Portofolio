@@ -3,7 +3,7 @@ import SkillIcons from './SkillIcons'
 
 const Skills = () => {
   return (
-    <div className='sm:max-w-[608px] md:max-w-[740px] lg:max-w-[908px] flex justify-center text-center flex-wrap flex-col'>
+    <div className='sm:max-w-[608px] md:max-w-[740px] lg:max-w-[908px] flex justify-center text-center flex-wrap flex-col' data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
       <p className="text-3xl font-medium mb-8">My Skills</p>
       <ul className="flex flex-wrap justify-center gap-0.5 gap-y-3">
         <SkillIcons />
