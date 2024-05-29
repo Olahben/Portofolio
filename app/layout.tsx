@@ -5,6 +5,7 @@ import dotenv from "dotenv";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ContextProvider from "./ContextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +19,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   dotenv.config();
   return (
     <html data-theme="" lang="en">
-      <body className={inter.className}>{children}</body>
+      <ContextProvider>
+        {children}
+        <body className={inter.className}>{children}</body>
+      </ContextProvider>
     </html>
   );
 }
