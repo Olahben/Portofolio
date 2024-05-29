@@ -23,7 +23,6 @@ export default function RootLayout({
   return (
     <html data-theme="" lang="en">
       <ContextProvider>
-        {children}
         <body className={inter.className}>{children}</body>
       </ContextProvider>
     </html>
